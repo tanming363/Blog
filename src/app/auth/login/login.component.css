@@ -1,0 +1,57 @@
+mat-form-field {
+  width: 100% !important;
+}
+mat-card-header {
+  text-align: center;
+  background: #5d1049;
+  color: #fff;
+  height: 35px;
+  width: 100%;
+  padding-top: 15px;
+  text-align: center;
+  border-top-left-radius: 4px;
+  border-top-right-radius: 4px;
+}
+mat-card-title {
+  font-weight: 100;
+}
+
+mat-card-content,
+mat-card-actions {
+  padding: 16px;
+  margin: 0;
+}
+
+mat-card-actions button {
+  background-color: #5d1049;
+  color: #fff;
+  margin: 0;
+}
+mat-card-actions {
+  margin: 0;
+   padding-bottom: 0;
+}
+.spinner {
+   position: absolute;
+    top: 40%;
+    left: 45%;
+}
+.mat-spinner::ng-deep circle {
+  stroke: #5d1049;
+}
+
+.mat-card {
+  box-shadow: 0 0 0 0 rgba(0, 0, 0, 0), 0 0 0 0 rgba(0, 0, 0, 0),
+    0 0 0 0 rgba(0, 0, 0, 0);
+  padding: 0 0 16px 0;
+}
+
+/* Change label color on focused */
+::ng-deep .mat-form-field.mat-focused .mat-form-field-label {
+  color: #5d1049 !important;
+}
+
+/* underline border color on focused */
+::ng-deep .mat-focused .mat-form-field-underline .mat-form-field-ripple {
+  background-color: #5d1049 !important;
+}

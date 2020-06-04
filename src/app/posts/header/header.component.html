@@ -1,0 +1,35 @@
+<mat-toolbar>
+  <button mat-mini-fab>
+    <mat-icon>
+      <i class="material-icons-round">menu</i>
+    </mat-icon>
+  </button>
+  <ul>
+    <li *ngIf="userIsAuthenticated">
+      <a class="mat-subheading-2" mat-button routerLink="/" routerLinkActive="">
+        My Posts
+      </a>
+    </li>
+  </ul>
+  <div class="spacer"></div>
+  <ul>
+    <li *ngIf="userIsAuthenticated">
+      <a class="mat-subheading-2" mat-button routerLink="/create" routerLinkActive="mat-accent">
+        Create New Post
+      </a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a class="mat-subheading-2" mat-button routerLink="/signup" routerLinkActive="mat-accent">
+        Sign Up
+      </a>
+    </li>
+    <li *ngIf="!userIsAuthenticated">
+      <a class="mat-subheading-2" mat-button routerLink="/login" routerLinkActive="mat-accent">
+        Login
+      </a>
+    </li>
+    <li *ngIf="userIsAuthenticated">
+      <button mat-button (click)="onLogout()">Logout</button>
+    </li>
+  </ul>
+</mat-toolbar>

@@ -1,0 +1,6 @@
+{
+  "env":{
+    "MONGO_ATLAS_PW":"Tni@2413",
+    "JWT_KEY":"WORK_HARD"
+  }
+}
